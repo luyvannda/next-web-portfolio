@@ -15,10 +15,10 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-gray-200 hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo aliquid aspernatur quae reprehenderit quod cum labore.</p>
+          <p className="text-gray-200 hidden md:block max-w-[60ch] z-[6]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo aliquid aspernatur quae reprehenderit quod cum labore.</p>
 
 
-          <div className="flex-col md:flex-row hidden md:flex gap-5">
+          <div className="flex-col md:flex-row hidden md:flex gap-5 z-[6]">
             <Link
               href="/my-skills"
               className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]">
@@ -79,11 +79,28 @@ export default function Home() {
             <Image
               src="/cliff.webp"
               alt="cliff"
-              width={400}
-              height={400}
+              width={480}
+              height={480}
             />
-
           </div>
+
+          <div className="absolute bottom-0 z-[5] w-full h-auto">
+            <Image
+              src="/trees.webp"
+              alt="trees"
+              width={2000}
+              height={2000}
+              className="w-full h-full"
+            />
+          </div>
+
+          <Image
+            src="/stars.png"
+            alt="stars"
+            height={300}
+            width={300}
+            className="absolute top-10 left-0 z-[10]"
+          />
 
 
         </div>
