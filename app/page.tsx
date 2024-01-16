@@ -10,13 +10,13 @@ export default function Home() {
 
         <div className="mt-24">
 
-          <div className="relative pl-20">
+          <div className="relative pl-20 md:static md:pl-0">
             <Image
               src="/horse.png"
               alt="horse"
               height={280}
               width={280}
-              className="absolute top-20 z-[5]"
+              className="absolute top-20 z-[5] md:right-10 md:top-32 md:w-[400px] md:h-[400px]"
             />
 
             <Image
@@ -24,7 +24,7 @@ export default function Home() {
               alt="cliff"
               width={480}
               height={480}
-              className="absolute top-20 z-[5]"
+              className="absolute top-20 z-[5] md:right-0"
             />
 
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
           <div id="title-description" className="z-[10]">
 
             <h1 className="text-[1.5rem] text-white font-semibold">
-              Make anything possible <br /> with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Make anything possible <br className="md:hidden" /> with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 Web Development
               </span>
             </h1>
@@ -96,8 +96,8 @@ export default function Home() {
             <Image
               src="/trees.webp"
               alt="trees"
-              width={1000}
-              height={1000}
+              width={2000}
+              height={2000}
               className="w-full h-full"
             />
           </div>
