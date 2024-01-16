@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <div className="fixed top-0 px-2 z-[40] w-full h-fit bg-transparent flex flex-col md:justify-between items-center  md:px-20">
+        <div className="fixed top-0 z-[40] w-full h-fit bg-transparent flex flex-col md:justify-between items-center md:px-20">
             <div className="flex flex-row gap-3 items-center">
                 <div className="relative">
                     <Image
@@ -16,7 +16,7 @@ const Navbar = () => {
                     />
                 </div>
                 <h1 className="text-white text-[25px] font-semibold">
-                    Luy Vannda{" "}
+                    Joe Joe{" "}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
                         {" "}
                         Dev{" "}
