@@ -4,11 +4,11 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     screens: {
-      sm: "425px",
+      sm: "400px",
 
       md: "768px",
 
@@ -16,17 +16,17 @@ const config: Config = {
 
       xl: "1280px",
 
-      "2xl": "1400px",
+      "2xl": "1400px"
     },
 
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;
