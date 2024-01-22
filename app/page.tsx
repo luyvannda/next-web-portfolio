@@ -36,9 +36,9 @@ export default function Home() {
             </h1>
 
             <p className="text-2xl mt-4 mb-4 text-gray-200 hidden md:block max-w-[60ch] z-[10] md:text-center md:px-4 md:self-center">
-              Hello I am Joe Joe, a Front End Developer with 1 year experience
-              in React.js, Bootstrap and Sass. This website is built with
-              Tailwind, NextJS and Typescript.
+              Hello I am Joe Joe, a NextJS Front End Developer with 1 year of
+              experience in Next.js, React.js, Tailwind, Bootstrap, html,
+              css/Sass, and Javascript.
             </p>
           </div>
 

@@ -79,15 +79,18 @@ export const SkillData = [
 export const Socials = [
   {
     name: "Discord",
-    src: "/discord.svg"
+    src: "/discord.svg",
+    url: "https://discordapp.com/users/luyvannda"
   },
   {
     name: "Facebook",
-    src: "/facebook.svg"
+    src: "/facebook.svg",
+    url: "https://www.facebook.com/lvannda/"
   },
   {
     name: "Linkedin",
-    src: "/linkedin.svg"
+    src: "/linkedin.svg",
+    url: "https://www.linkedin.com/in/luyvannda/"
   }
 ];
 export const Projects = [
