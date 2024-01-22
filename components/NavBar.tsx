@@ -5,14 +5,14 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="pt-2 fixed top-0 z-[40] w-full h-fit bg-transparent flex flex-col md:pt-4 md:flex-row md:justify-between items-center md:px-20">
-      <div className="flex flex-row gap-3 items-center">
-        <div className="relative">
+      <div className="flex flex-row items-center">
+        <div className="">
           <Image
             src="/horseLogo.jpg"
             alt="logo"
-            width={40}
-            height={40}
-            className="w-full h-full object-contain rounded-full"
+            width={34}
+            height={34}
+            className="w-3/4 h-3/4 md:w-full md:h-full object-contain rounded-full"
           />
         </div>
         <h1 className="text-white text-[25px] font-semibold">
@@ -24,7 +24,7 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <div className="flex flex-row gap-5 mb-2">
+      <div className="flex mt-6 flex-row gap-5">
         {Socials.map((social) => (
           <Image
             key={social.name}
