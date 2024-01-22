@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="w-screen h-screen relative overflow-hidden">
       <div
-        className="w-full h-full bg-cover bg-center flex flex-col items-center md:grid md:grid-cols-1 -z-50"
+        className="w-full h-full bg-cover bg-center flex flex-col items-center md:grid md:grid-cols-1 lg:grid-cols-2 -z-50"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <div className="mt-36 sm:mt-64 md:mt-20">
@@ -27,15 +27,15 @@ export default function Home() {
             />
           </div>
 
-          <div className="z-10 md:relative md:top-20 md:flex md:flex-col">
-            <h1 className="text-2xl md:text-3xl text-white font-semibold md:self-center">
+          <div className="z-10 md:relative md:top-20 md:flex md:flex-col lg:absolute lg:top-48 lg:max-w-2xl lg:mx-16">
+            <h1 className="text-2xl md:text-3xl text-white font-semibold md:self-center lg:self-start lg:text-5xl">
               Make anything possible <br className="md:hidden" /> with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 Web Development
               </span>
             </h1>
 
-            <p className="text-2xl mt-4 mb-4 text-gray-200 hidden md:block max-w-[60ch] z-[10] md:text-center md:px-4 md:self-center">
+            <p className="text-2xl mt-4 mb-4 text-gray-200 hidden md:block max-w-[60ch] z-[10] md:text-center md:px-4 md:self-center lg:self-start lg:px-0 lg:text-justify lg:text-3xl">
               Hello I am Joe Joe, a NextJS Front End Developer with 1 year of
               experience in Next.js, React.js, Tailwind, Bootstrap, html,
               css/Sass, and Javascript.
