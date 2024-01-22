@@ -2,36 +2,21 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative">
-      <div className="absolute flex bottom-2 z-[20] right-2 flex-col md:hidden gap-2">
-        <Link href="/my-skills" className="btn">
-          Learn more
-        </Link>
+    <div className="absolute flex bottom-2 z-[10] right-2 flex-col gap-2 md:bottom-0 md:top-28 md:relative md:flex-row md:justify-center">
+      <Link
+        href="/my-skills"
+        className="rounded-[20px] bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+      >
+        Learn more
+      </Link>
 
-        <Link href="/my-projects" className="btn">
-          My projects
-        </Link>
+      <Link href="/my-projects" className="btn">
+        My projects
+      </Link>
 
-        <Link href="/contact-me" className="btn">
-          Contact me
-        </Link>
-      </div>
-
-      <div className="hidden flex-col md:flex-row  gap-5 z-[6]">
-        <Link href="/my-skills" className="btn">
-          Learn more
-        </Link>
-
-        <Link href="/my-projects" className="btn">
-          <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20"></div>
-          My projects
-        </Link>
-
-        <Link href="/contact-me" className="btn">
-          <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20"></div>
-          Contact me
-        </Link>
-      </div>
+      <Link href="/contact-me" className="btn">
+        Contact me
+      </Link>
     </div>
   );
 }
