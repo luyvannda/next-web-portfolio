@@ -9,7 +9,7 @@ export default function Home() {
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <div className="mt-36 sm:mt-64 md:mt-20">
-          <div className="relative pl-20 md:static md:pl-0">
+          <div className="relative pl-20 sm:pl-28 md:static md:pl-0">
             <Image
               src="/horse.png"
               alt="horse"
@@ -35,14 +35,18 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-2xl mt-4 mb-4 text-gray-200 hidden md:block max-w-[60ch] z-[10] md:text-center md:px-4 md:self-center lg:self-start lg:px-0 lg:text-justify lg:text-3xl">
-              Hello I am Joe Joe, a NextJS Front End Developer with 1 year of
-              experience in Next.js, React.js, Tailwind, Bootstrap, html,
-              css/Sass, and Javascript.
+            <p className="text-2xl mt-4 mb-4 text-gray-200 hidden md:block max-w-[60ch] z-[10] md:text-center md:px-4 md:self-center lg:self-start lg:px-0 lg:text-justify lg:text-3xl lg:mb-0">
+              Hello I am Luy Vannda or Joe Joe, a NextJS Front End Developer
+              with 1 year of experience in responsive web application.
             </p>
+            <div className="hidden lg:block">
+              <Hero />
+            </div>
           </div>
 
-          <Hero />
+          <div className="lg:hidden">
+            <Hero />
+          </div>
         </div>
 
         <div className="absolute bottom-0 md:bottom-12 z-[5] w-full h-auto">
