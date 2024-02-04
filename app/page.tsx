@@ -8,14 +8,14 @@ export default function Home() {
         className="w-full h-full bg-cover bg-center flex flex-col items-center md:grid md:grid-cols-1 lg:grid-cols-2 -z-50"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <div className="mt-36 sm:mt-64 md:mt-20">
+        <div className="mt-36 sm:mt-64 md:mt-20 lg:mt-0">
           <div className="relative pl-20 sm:pl-28 md:static md:pl-0">
             <Image
               src="/horse.png"
               alt="horse"
               height={280}
               width={280}
-              className="absolute top-20 z-0 md:right-10 md:top-20 md:w-[400px] md:h-[400px]"
+              className="absolute top-12 z-10 md:right-10 md:top-20 md:w-[400px] md:h-[400px] lg:top-[50%] lg:-translate-y-1/2"
             />
 
             <Image
@@ -23,11 +23,11 @@ export default function Home() {
               alt="cliff"
               width={480}
               height={480}
-              className="absolute top-20 z-0 md:right-0 md:top-10"
+              className="absolute top-10 z-0 md:right-0 md:top-10 lg:top-[65%] lg:-translate-y-[50%] 2xl:top-[65%]"
             />
           </div>
 
-          <div className="z-10 md:relative md:top-20 md:flex md:flex-col lg:absolute lg:top-48 lg:max-w-2xl lg:mx-16">
+          <div className="z-10 md:relative md:top-20 md:flex md:flex-col lg:absolute lg:top-[50%] lg:-translate-y-1/2 lg:max-w-2xl lg:mx-16">
             <h1 className="text-2xl md:text-3xl text-white font-semibold md:self-center lg:self-start lg:text-5xl">
               Make anything possible <br className="md:hidden" /> with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 md:bottom-12 z-[5] w-full h-auto">
+        <div className="absolute bottom-0 md:bottom-12 md:h-1/2 lg:bottom-0 z-[5] w-full h-auto">
           <Image
             src="/trees.webp"
             alt="trees"
