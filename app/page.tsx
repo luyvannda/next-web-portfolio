@@ -12,7 +12,10 @@ export default function Home() {
       >
         <section className="pt-32 flex flex-col items-center lg:grid lg:grid-cols-2">
           <Description />
-          <Hero />
+
+          <div>
+            <Hero />
+          </div>
         </section>
         <HorseImage />
       </div>
