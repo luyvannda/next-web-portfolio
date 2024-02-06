@@ -1,6 +1,6 @@
 export default function Description() {
   return (
-    <div className="z-20 md:px-24 md:absolute md:top-[55%] lg:max-w-2xl lg:mx-16">
+    <div className="z-50 md:px-24 md:absolute md:top-[55%] lg:max-w-2xl lg:mx-16">
       <h1 className="text-2xl md:text-3xl md:text-center text-white font-semibold lg:self-start lg:text-5xl">
         Make anything possible <br className="md:hidden" /> with{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
