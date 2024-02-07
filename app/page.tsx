@@ -10,9 +10,8 @@ export default function Home() {
         className="w-full h-full bg-cover bg-center -z-50"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <section className="pt-32 flex flex-col items-center lg:grid lg:grid-cols-2">
+        <section className="pt-32 md:pt-16 flex flex-col items-center">
           <Description />
-
           <div>
             <Hero />
           </div>
