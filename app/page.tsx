@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Footer Images */}
 
-      <div className="absolute bottom-0 lg:-bottom-28 z-[5] w-full h-auto">
+      <div className="absolute bottom-0 lg:-bottom-28 xl:-bottom-48 z-10 w-full h-auto">
         <Image
           src="/trees.webp"
           alt="trees"
