@@ -6,9 +6,9 @@ export default function HorseImage() {
       <Image
         src="/horse.png"
         alt="horse"
-        height={320}
-        width={320}
-        className="absolute right-0 w-5/6 translate-y-[5%] xs:translate-y-[2%] md:translate-y-[0%] md:w-1/2"
+        height={300}
+        width={300}
+        className="absolute right-0 translate-y-[3%] xs:translate-y-[16%] md:translate-y-[0%] lg:-translate-y-[50%]"
       />
 
       <Image
@@ -16,8 +16,11 @@ export default function HorseImage() {
         alt="cliff"
         width={480}
         height={480}
-        className="absolute left-16 -translate-y-[8%] xs:-translate-y-[9%] xs:left-[20%] md:left-[55%] md:-translate-y-[10%];"
+        className="absolute left-20 -translate-y-[10%] xs:-translate-y-[9%] xs:left-[28%] md:left-auto md:-right-48 md:-translate-y-[20%] lg:-translate-y-[36%]"
       />
     </div>
   );
 }
+
+//  className =
+//    "absolute left-20 -translate-y-[10%] xs:-translate-y-[9%] xs:left-[28%] md:left-[60%] md:-translate-y-[20%]";

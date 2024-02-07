@@ -10,18 +10,16 @@ export default function Home() {
         className="w-full h-full bg-cover bg-center -z-50"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <section className="pt-32 md:pt-16 flex flex-col items-center">
+        <section className="pt-32 md:pt-24 flex flex-col items-center lg:items-start lg:translate-y-[45%] lg:translate-x-[2%]">
           <Description />
-          <div>
-            <Hero />
-          </div>
+          <Hero />
         </section>
         <HorseImage />
       </div>
 
       {/* Footer Images */}
 
-      <div className="absolute bottom-0 md:bottom-4 md:h-1/2 lg:bottom-0 z-[5] w-full h-auto">
+      <div className="absolute bottom-0 lg:-bottom-28 z-[5] w-full h-auto">
         <Image
           src="/trees.webp"
           alt="trees"
