@@ -27,7 +27,7 @@ const Navigation = () => {
   }, [isRouting, path]);
 
   return (
-    <div style={{ left: "20%" }} className="nav_footer">
+    <div style={{ left: "20%" }} className="nav_icons">
       {/* {isRouting && <Transition />} */}
       {NavLinks.map((nav) => (
         <Link key={nav.name} href={nav.link} className="mb-16 pl-4 min-w-[20%]">
