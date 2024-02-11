@@ -27,10 +27,14 @@ const Navigation = () => {
   }, [isRouting, path]);
 
   return (
-    <div style={{ left: "20%" }} className="nav_icons">
+    <div className="nav_icons">
       {/* {isRouting && <Transition />} */}
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className="mb-16 pl-4 min-w-[20%]">
+        <Link
+          key={nav.name}
+          href={nav.link}
+          className="mb-8 md:mb-4 min-w-[20%] xl:min-w-[15%]"
+        >
           <nav.icon
             className={`w-[24px] h-[24px] ${
               path === nav.name ? "text-purple-800" : "text-white"
