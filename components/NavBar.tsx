@@ -6,7 +6,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="pt-2 fixed top-0 z-[40] w-full h-fit bg-transparent flex flex-col md:pt-4 md:flex-row md:justify-between items-center md:px-20">
-      <div className="flex flex-row items-center space-x-4">
+      <Link href="/" className="flex flex-row items-center space-x-4">
         <div className="">
           <Image
             src="/horseLogo.jpg"
@@ -23,7 +23,7 @@ const Navbar = () => {
             Dev{" "}
           </span>
         </h1>
-      </div>
+      </Link>
 
       <div className="flex mt-6 md:mt-0 flex-row gap-5">
         {Socials.map((social) => (
