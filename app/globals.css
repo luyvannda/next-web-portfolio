@@ -14,4 +14,8 @@ body {
   .nav_icons {
     @apply absolute -bottom-[7%] z-50 flex gap-2 rounded-full border border-white  bg-black px-4 py-7 xs:-bottom-[6%] md:-left-[11%] md:bottom-[auto] md:top-[50%] md:max-h-[450px] md:w-[20%] md:-translate-y-[50%] md:translate-x-0 md:flex-col md:items-end md:px-8 lg:-bottom-[4%] lg:left-[50%] lg:top-auto lg:-translate-x-[50%] lg:translate-y-0 lg:flex-row lg:items-center lg:justify-center xl:px-0 xl:py-6;
   }
+
+  .swiper_image {
+    @apply w-3/4 xs:w-[85%] md:w-[70%] lg:w-[70px] xl:w-[80px];
+  }
 }

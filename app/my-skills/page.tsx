@@ -12,9 +12,9 @@ const Page = () => {
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
       className="flex h-screen w-screen items-center justify-center bg-cover bg-center"
     >
-      <div className="flex max-w-[80%] flex-col items-center gap-20 text-center">
+      <div className="flex max-w-[95%] flex-col items-center gap-14 text-center xs:gap-16 md:max-w-[90%] md:gap-24 lg:max-w-[80%] lg:gap-20">
         <div className="flex flex-col items-center gap-4">
-          <h1 className="text-[50px] font-semibold text-white">
+          <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
             Skills{" "}
             <span className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent">
               {" "}
@@ -22,8 +22,12 @@ const Page = () => {
             </span>
             Technologies
           </h1>
-          <p className="text-[20px] text-gray-400">
-            Practicing latest web development tech, one stack at a time.
+          <p className="text-lg text-gray-400 xs:text-xl md:text-2xl">
+            Master latest web development tech, <br className="md:hidden" />{" "}
+            <span className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent">
+              {" "}
+              one stack at a time.
+            </span>
           </p>
         </div>
         <Swiper
@@ -44,6 +48,7 @@ const Page = () => {
                 alt={skill.name}
                 width={skill.width}
                 height={skill.height}
+                className="swiper_image"
               />
             </SwiperSlide>
           ))}
@@ -67,6 +72,7 @@ const Page = () => {
                 alt={skill.name}
                 width={skill.width}
                 height={skill.height}
+                className="swiper_image"
               />
             </SwiperSlide>
           ))}
