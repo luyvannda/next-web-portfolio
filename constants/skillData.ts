@@ -2,14 +2,14 @@ export const SkillData = [
   {
     name: "Html 5",
     Image: "/html.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   {
     name: "Css",
     Image: "/css.png",
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
   },
   {
     name: "JavaScript",
@@ -17,6 +17,21 @@ export const SkillData = [
     width: 65,
     height: 65,
   },
+
+  {
+    name: "Sass",
+    Image: "/sass.png",
+    width: 65,
+    height: 65,
+  },
+
+  {
+    name: "Bootstrap",
+    Image: "/bootstrap.png",
+    width: 80,
+    height: 80,
+  },
+
   {
     name: "Tailwind Css",
     Image: "/tailwind.png",
@@ -30,8 +45,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
+    name: "Recoil",
+    Image: "/recoil.webp",
     width: 80,
     height: 80,
   },
@@ -49,27 +64,29 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Framer Motion",
-    Image: "/framer.png",
+    name: "PHP",
+    Image: "/php.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
-    width: 80,
-    height: 80,
+    name: "Mysql",
+    Image: "/mysql.png",
+    width: 65,
+    height: 65,
   },
+
   {
-    name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
+    name: "API",
+    Image: "/api.png",
+    width: 65,
+    height: 65,
   },
+
   {
     name: "Git Hub",
     Image: "/github.png",
-    width: 80,
-    height: 80,
+    width: 65,
+    height: 65,
   },
 ];

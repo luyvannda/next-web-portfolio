@@ -23,7 +23,7 @@ const Page = () => {
             Technologies
           </h1>
           <p className="text-[20px] text-gray-400">
-            Practicing latest tech this world has to offer, one stack at a time.
+            Practicing latest web development tech, one stack at a time.
           </p>
         </div>
         <Swiper
