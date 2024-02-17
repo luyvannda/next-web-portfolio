@@ -11,12 +11,15 @@ const Page = () => {
       className="flex h-screen w-screen items-center justify-center bg-cover bg-center"
     >
       <div className="grid max-h-[90%] max-w-[90%] grid-cols-2 gap-5">
-        {Projects.map((project, index) => (
+        {Projects.map((project) => (
           <ProjectCard
-            key={index}
+            key={project.id}
+            id={project.id}
+            imgCover={project.imgCover}
             title={project.title}
-            text={project.text}
-            image={project.src}
+            skills={project.skills}
+            livePreview={project.livePreview}
+            sourceCode={project.sourceCode}
           />
         ))}
       </div>
