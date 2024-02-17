@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative overflow-hidden">
+    <main className="relative h-screen w-screen overflow-hidden">
       <div
-        className="w-full h-full bg-cover bg-center -z-50"
+        className="-z-50 h-full w-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <section className="pt-32 md:pt-24 flex flex-col items-center lg:pt-16 lg:items-start lg:-translate-x-[2%] lg:translate-y-[45%] xl:translate-x-[2%]">
+        <section className="relative z-50 flex flex-col items-center pt-32 md:pt-24 lg:-translate-x-[2%] lg:translate-y-[45%] lg:items-start lg:pt-16 xl:translate-x-[2%]">
           <Description />
           <Hero />
         </section>
@@ -19,13 +19,13 @@ export default function Home() {
 
       {/* Footer Images */}
 
-      <div className="absolute bottom-0 lg:-bottom-28 xl:-bottom-48 z-10 w-full h-auto">
+      <div className="absolute bottom-0 z-0 h-auto w-full lg:-bottom-28 xl:-bottom-48">
         <Image
           src="/trees.webp"
           alt="trees"
           width={2000}
           height={2000}
-          className="w-full h-full"
+          className="h-full w-full"
         />
       </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
         alt="stars"
         height={300}
         width={300}
-        className="absolute top-10 left-0 z-[5]"
+        className="absolute left-0 top-10 z-[5]"
       />
     </main>
   );

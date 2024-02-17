@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="absolute flex bottom-2 z-50 right-2 flex-col gap-2 md:flex-row md:gap-4 md:static md:mt-4 lg:ml-16">
+    <div className="absolute bottom-2 right-2 z-50 flex flex-col gap-2 md:static md:mt-4 md:flex-row md:gap-4 lg:ml-16">
       <Link href="/my-skills" className="btn">
-        Learn More
+        My Skills
       </Link>
 
       <Link href="/my-projects" className="btn">

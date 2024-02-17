@@ -39,7 +39,7 @@ const Navigation = () => {
           >
             <nav.icon
               className={`h-[24px] w-[24px] lg:transform lg:transition lg:duration-500 lg:ease-in-out lg:hover:-translate-y-2 ${
-                path === nav.name ? "text-purple-800" : "text-white"
+                path === nav.name ? "text-green-500" : "text-white"
               }`}
             />
           </Link>
