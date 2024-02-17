@@ -10,7 +10,7 @@ const Page = () => {
       style={{ backgroundImage: "url(/Mountains.jpg)" }}
       className="flex h-screen w-screen items-center justify-center overflow-y-scroll bg-cover bg-center"
     >
-      <div className="grid max-h-[90%] max-w-[90%] grid-cols-2 gap-5">
+      <div className="md:grid-col-1 grid max-h-[80%] max-w-[80%] gap-2 md:grid-cols-2">
         {Projects.map((project) => (
           <ProjectCard
             key={project.id}

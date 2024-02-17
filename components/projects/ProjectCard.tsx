@@ -1,6 +1,8 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface ProjectsProp {
   id: number;
@@ -19,21 +21,35 @@ const ProjectCard = ({
   livePreview,
   sourceCode,
 }: ProjectsProp) => {
-  return (
-    <div className="">
-      <div className="">
-        <h2>Projects</h2>
-      </div>
+  const [isFlipped, setIsFlipped] = useState(false);
 
-      <div key={id} className="">
-        <a href={livePreview} target="_blank" rel="noreferrer">
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  function handleFlip() {
+    if (!isAnimating) {
+      setIsFlipped(!isFlipped);
+      setIsAnimating(true);
+    }
+  }
+
+  return (
+    <div className="container">
+      <div key={id} onClick={handleFlip} className="text-white">
+        <motion.div
+          className="flip-card-inner h-full w-full"
+          initial={false}
+          animate={{ rotateY: isFlipped ? 180 : 360 }}
+          transition={{ duration: 0.6, animationDirection: "normal" }}
+          onAnimationComplete={() => setIsAnimating(false)}
+        >
           <Image
             src={`/projectsImage/${imgCover}`}
             alt="Project's preview image"
             width={1080}
             height={800}
           ></Image>
-        </a>
+        </motion.div>
+
         <h2>{title}</h2>
         <p>{skills}</p>
 
