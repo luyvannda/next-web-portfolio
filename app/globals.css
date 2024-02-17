@@ -19,3 +19,18 @@ body {
     @apply w-3/4 xs:w-[85%] md:w-[70%] lg:w-[70px] xl:w-[80px];
   }
 }
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
