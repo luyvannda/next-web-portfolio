@@ -3,7 +3,6 @@
 import ProjectCard from "@/components/projects/ProjectCard";
 import { Projects } from "@/constants/projectsData";
 import React from "react";
-import Description from "@/components/homepage/Description";
 
 const Page = () => {
   return (
