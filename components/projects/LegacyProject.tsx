@@ -39,7 +39,7 @@ const LegacyProject = ({ image, title, text }: Props) => {
         >
           <div className="absolute inset-0 z-[-1] h-full w-full rounded-md bg-black opacity-50" />
           <div className="z-[30] flex flex-col gap-20 py-3">
-            <h1 className="text-whote text-2xl font-semibold">{title}</h1>
+            <h1 className="text-2xl font-semibold text-white">{title}</h1>
             <p className="text-[20px] text-gray-200">{text}</p>
           </div>
         </div>
@@ -48,4 +48,4 @@ const LegacyProject = ({ image, title, text }: Props) => {
   );
 };
 
-export default ProjectCard;
+export default LegacyProject;
