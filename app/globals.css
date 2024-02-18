@@ -8,7 +8,7 @@ body {
 
 @layer components {
   .btn {
-    @apply z-10 rounded-[20px] bg-blue-500 px-5 py-3 text-lg text-white hover:bg-blue-400 active:bg-blue-800 md:transform md:px-6 md:py-4 md:text-2xl md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2 lg:text-3xl;
+    @apply z-10 rounded-[20px] bg-blue-500 px-5 py-3 text-lg text-white hover:bg-blue-400 active:bg-blue-800 md:transform md:px-6 md:py-4 md:text-2xl md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2;
   }
 
   .nav_icons {
