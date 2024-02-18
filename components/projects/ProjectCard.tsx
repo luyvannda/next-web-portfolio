@@ -50,11 +50,10 @@ const ProjectCard = ({
               alt="Project's preview image"
               width={1080}
               height={800}
-              className=""
             ></Image>
 
-            <div className="absolute left-[50%] top-[50%] z-50 -translate-x-[50%] rounded-lg bg-slate-200 px-2 opacity-0 group-hover:opacity-80">
-              <p className="text-lg text-indigo-500 md:text-xl">
+            <div className="absolute left-[50%] top-[50%] z-50 -translate-x-[50%] rounded-lg bg-slate-200 px-2 lg:opacity-0 lg:group-hover:opacity-80">
+              <p className="text-sm text-indigo-500 md:text-lg">
                 Learn more &gt;
               </p>
             </div>
@@ -85,12 +84,7 @@ const ProjectCard = ({
       </div>
 
       <div className="text-white">
-        <a
-          className="live-view"
-          href={livePreview}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className="" href={livePreview} target="_blank" rel="noreferrer">
           VIEW PROJECT
         </a>
         <a className="" href={sourceCode} target="_blank" rel="noreferrer">
