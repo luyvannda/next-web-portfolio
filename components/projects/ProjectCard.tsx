@@ -50,10 +50,11 @@ const ProjectCard = ({
               alt="Project's preview image"
               width={1080}
               height={800}
+              className="rounded-lg"
             ></Image>
 
             <div className="absolute left-[50%] top-[50%] z-50 -translate-x-[50%] rounded-lg bg-slate-200 px-2 lg:opacity-0 lg:group-hover:opacity-80">
-              <p className="text-sm text-indigo-500 md:text-lg">
+              <p className="text-sm text-indigo-500 md:text-xl">
                 Learn more &gt;
               </p>
             </div>
@@ -65,25 +66,24 @@ const ProjectCard = ({
               alt="Project's preview image"
               width={1080}
               height={800}
-              className="opacity-40"
+              className="rounded-lg opacity-40"
             ></Image>
-            <div className="absolute left-[50%] top-[50%] w-[80%] -translate-x-[50%] -translate-y-[50%] space-y-4">
-              <h2 className="text-xl font-bold md:text-2xl lg:text-3xl">
+            <div className="absolute left-[50%] top-[50%] w-[90%] -translate-x-[50%] -translate-y-[50%] space-y-1 md:w-[80%] md:space-y-4">
+              <h2 className="text-center text-xl font-bold md:text-3xl xl:text-4xl">
                 {title}
               </h2>
-              <p className="text-lg md:text-xl">
-                Skills:{" "}
-                <span className="bg-gradient-to-r from-purple-300 to-red-300 bg-clip-text text-transparent">
-                  {skills}
-                </span>
+              <p className="bg-gradient-to-r from-purple-400 to-red-400 bg-clip-text text-center text-sm font-semibold text-transparent xs:text-lg md:text-2xl xl:text-3xl ">
+                {skills}
               </p>
-              <p className="text-justify text-sm md:text-lg">{description}</p>
+              <p className="text-justify text-sm xs:text-base md:text-2xl lg:text-xl xl:text-2xl">
+                {description}
+              </p>
             </div>
           </div>
         </motion.div>
       </div>
 
-      <div className="text-white">
+      <div className="pt-4 text-white">
         <a className="" href={livePreview} target="_blank" rel="noreferrer">
           VIEW PROJECT
         </a>
