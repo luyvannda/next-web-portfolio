@@ -7,22 +7,32 @@ body {
 }
 
 @layer components {
+  /* this is homepage button */
+
   .btn {
     @apply z-10 rounded-[20px] bg-blue-500 px-5 py-3 text-lg text-white hover:bg-blue-400 active:bg-blue-800 md:transform md:px-6 md:py-4 md:text-2xl md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2;
   }
+
+  /* This use to style navigation icons in the bottom of the page */
 
   .nav_icons {
     @apply absolute -bottom-[7%] z-50 flex gap-2 rounded-full border border-white  bg-black px-4 py-7 xs:-bottom-[6%] md:-left-[11%] md:bottom-[auto] md:top-[50%] md:max-h-[450px] md:w-[20%] md:-translate-y-[50%] md:translate-x-0 md:flex-col md:items-end md:px-8 lg:-bottom-[4%] lg:left-[50%] lg:top-auto lg:-translate-x-[50%] lg:translate-y-0 lg:flex-row lg:items-center lg:justify-center xl:px-0 xl:py-6;
   }
 
+  /* This is used in the skill page for swiper animation */
+
   .swiper_image {
     @apply w-3/4 xs:w-[85%] md:w-[70%] lg:w-[70px] xl:w-[80px];
   }
+
+  /* this a button for the project card */
 
   .project-btn {
     @apply rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-400 active:bg-blue-800 xs:text-base md:transform md:text-lg md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2 xl:px-6 xl:py-3 xl:text-xl;
   }
 }
+
+/* this flip card effect is for the project card */
 
 .flip-card-inner {
   transition: transform 0.6s;
