@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface ProjectsProp {
   id: number;
@@ -83,13 +84,23 @@ const ProjectCard = ({
         </motion.div>
       </div>
 
-      <div className="pt-4 text-white">
-        <a className="" href={livePreview} target="_blank" rel="noreferrer">
+      <div className="flex justify-center gap-3 pt-4 text-white md:justify-evenly md:gap-0">
+        <Link
+          className="project-btn"
+          href={livePreview}
+          target="_blank"
+          rel="noreferrer"
+        >
           VIEW PROJECT
-        </a>
-        <a className="" href={sourceCode} target="_blank" rel="noreferrer">
+        </Link>
+        <Link
+          className="project-btn"
+          href={sourceCode}
+          target="_blank"
+          rel="noreferrer"
+        >
           VIEW CODE
-        </a>
+        </Link>
       </div>
     </div>
   );
