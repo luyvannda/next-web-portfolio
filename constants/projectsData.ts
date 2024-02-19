@@ -67,6 +67,17 @@ export const Projects = [
 
   {
     id: 7,
+    imgCover: "legacy-portfolio.webp",
+    title: "LEGACY PORTFOLIO",
+    skills: "REACT BOOTSTRAP SASS JAVASCRIPT",
+    description:
+      "This is my very first personal web portfolio. It was built with REACT, BOOTSTRAP, SASS, and use JAVASCRIPT to dynamically calculate my skill level based on the date I started learning each skills",
+    livePreview: "https://luyvannda.github.io/",
+    sourceCode: "https://github.com/luyvannda/luyvannda.github.io/",
+  },
+
+  {
+    id: 8,
     imgCover: "meme-generator.webp",
     title: "MEME GENERATOR",
     skills: "REACT BOOTSTRAP JAVASCRIPT API",
@@ -76,7 +87,7 @@ export const Projects = [
     sourceCode: "https://github.com/luyvannda/meme-generator/",
   },
   {
-    id: 8,
+    id: 9,
     imgCover: "workation.webp",
     title: "WORKATION RENTAL PROPERTY",
     skills: "REACT TAILWIND",
@@ -87,7 +98,7 @@ export const Projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     imgCover: "tesla-landing-page.webp",
     title: "TESLA LANDING PAGE",
     skills: "REACT TAILWIND TYPESCRIPT",
