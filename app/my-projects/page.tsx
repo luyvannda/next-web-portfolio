@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/projects/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import { Projects } from "@/constants/projectsData";
 import React from "react";
 
@@ -33,7 +33,7 @@ const ProjectsPage = () => {
 
       {/* This code use to create a space between the navigation to the contents of project page */}
 
-      <div className="block h-[80px] w-screen bg-transparent vs:h-[70px] xs:h-[75px] lg:h-[85px]"></div>
+      <div className="block h-[80px] w-screen bg-transparent vs:h-[70px] xs:h-[75px] lg:h-[120px]"></div>
     </div>
   );
 };

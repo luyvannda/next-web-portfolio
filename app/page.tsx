@@ -10,7 +10,7 @@ export default function Home() {
         className="-z-50 h-full w-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <section className="lg:relative lg:flex lg:h-[80%] lg:flex-col lg:justify-center">
+        <section className="lg:relative lg:flex lg:flex-col lg:justify-center">
           <div className="z-10 flex flex-col items-center pt-32 md:pt-24 lg:relative lg:-translate-x-[2%] lg:translate-y-[45%] lg:items-start lg:space-y-8 lg:pt-0 xl:translate-x-[2%]">
             <Description />
             <Hero />
