@@ -47,40 +47,23 @@ Upcoming features yet to be implement:
 - TypeScript
 - Tailwind
 - Framer Motion
+- Swiper
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I have learned to use next.js for image optimization, server side rendering and routing. I also use typescript to make type validation and catching code errors before runtime. I also learned to use Tailwind to create responsive design for all screen devices. Additionally, I also learned some useful animation techniques with the help of Framer Motion and Swiper.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-https://www.youtube.com/watch?v=qwtWcGeIe40
-
-https://github.com/Mif2006/WebPortfolio
-
-https://web-portfolio-mif2006.vercel.app/
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+As you can see, there is a few limitation to this web application, the front-end is robust and completed, yet the back-end still need to handle data from users when they interact with the contact form. I hope to implement this in later date when I am more proficient with database and next.js.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - Luy Vannda or Joe Joe (https://www.your-site.com)
+- Twitter - [@luyvannda](https://www.twitter.com/luyvannda)
 
 ## Acknowledgments
 
-Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript.
+Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the site responsive using tailwinds on my own, because his final production build does not pay much attention to responsive web design.
 
-https://furxx2000.github.io/Single-page-developer-portfolio/
+https://www.youtube.com/watch?v=qwtWcGeIe40
