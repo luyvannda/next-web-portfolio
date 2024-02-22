@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative h-screen w-screen overflow-hidden">
+    <main className="relative h-screen w-screen overflow-y-hidden">
       <div
         className="-z-50 h-full w-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}

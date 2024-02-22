@@ -7,7 +7,7 @@ interface SkillsListProp {
 const SkillsList = ({ name, emoji, color }: SkillsListProp) => {
   return (
     <div
-      className="rounded-md px-3 py-2 text-white"
+      className="space-x-1 rounded-md px-3 py-2 text-white"
       style={{ backgroundColor: color }}
     >
       <span>{name}</span>
