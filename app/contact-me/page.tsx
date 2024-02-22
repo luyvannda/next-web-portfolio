@@ -1,25 +1,26 @@
-import ContactForm from "@/components/ContactForm";
-import Profile from "@/components/Profile";
+import ContactForm from "@/components/contact/ContactForm";
+import Profile from "@/components/contact/Profile";
 import React from "react";
 
 const ContactMePage = () => {
   return (
     <div
       style={{ backgroundImage: "url(bg-3.jpg)" }}
-      className="flex h-screen w-screen flex-col items-center justify-center bg-cover bg-center"
+      className="flex h-full w-screen flex-col items-center justify-center overflow-y-scroll bg-cover bg-center"
     >
-      <div className="relative z-50">
-        <Profile />
-      </div>
+      <Profile />
 
-      <div
-        style={{ backgroundImage: "url(atombg-comp.webp" }}
-        className="relative h-[60%] w-[80%] rounded-xl border border-white bg-cover bg-center"
-      >
-        <div className="absolute bottom-16 left-20 w-[70%] md:w-[30%]">
-          <ContactForm />
+      <section className="pb-16 pt-8">
+        {" "}
+        <div
+          style={{ backgroundImage: "url(atombg-comp.webp" }}
+          className="relative w-full rounded-xl border border-white bg-cover bg-center lg:h-[60%]"
+        >
+          <div className="">
+            <ContactForm />
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
