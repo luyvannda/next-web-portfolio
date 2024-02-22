@@ -19,9 +19,17 @@ export default function Profile() {
         Laracasts. I take on 100daysofcode challenge in daily basic. When not
         coding, I love to read tech news, go jogging and play video games.
       </p>
-      {SkillData.map((skill) => (
-        <SkillsList key={skill.id} name={skill.name} emoji={skill.emoji} />
-      ))}
+
+      <div className="flex flex-wrap gap-2 px-4">
+        {SkillData.map((skill) => (
+          <SkillsList
+            key={skill.id}
+            name={skill.name}
+            emoji={skill.emoji}
+            color={skill.color}
+          />
+        ))}
+      </div>
     </div>
   );
 }
