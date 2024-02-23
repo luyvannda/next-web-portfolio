@@ -22,12 +22,7 @@ export default function ProfileCard() {
 
       <div className="flex flex-wrap gap-3 px-4">
         {SkillData.map((skill) => (
-          <SkillsList
-            key={skill.id}
-            name={skill.name}
-            emoji={skill.emoji}
-            color={skill.color}
-          />
+          <SkillsList key={skill.id} skillObj={skill} />
         ))}
       </div>
     </div>

@@ -6,23 +6,27 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface ProjectsProp {
-  id: number;
-  imgCover: string;
-  title: string;
-  skills: string;
-  description: string;
-  livePreview: string;
-  sourceCode: string;
+  projectObj: {
+    id: number;
+    imgCover: string;
+    title: string;
+    skills: string;
+    description: string;
+    livePreview: string;
+    sourceCode: string;
+  };
 }
 
 const ProjectCard = ({
-  id,
-  imgCover,
-  title,
-  skills,
-  description,
-  livePreview,
-  sourceCode,
+  projectObj: {
+    id,
+    imgCover,
+    title,
+    skills,
+    description,
+    livePreview,
+    sourceCode,
+  },
 }: ProjectsProp) => {
   const [isFlipped, setIsFlipped] = useState(false);
 

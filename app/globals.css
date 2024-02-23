@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply h-screen w-screen overflow-y-hidden;
+  @apply h-screen w-screen overflow-hidden;
 }
 
 @layer components {

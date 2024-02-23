@@ -1,5 +1,3 @@
-"use client";
-
 import ProjectCard from "@/components/ProjectCard";
 import { Projects } from "@/constants/projectsData";
 import React from "react";
@@ -17,16 +15,7 @@ const ProjectsPage = () => {
           {Projects.slice()
             .reverse()
             .map((project) => (
-              <ProjectCard
-                key={project.id}
-                id={project.id}
-                imgCover={project.imgCover}
-                title={project.title}
-                skills={project.skills}
-                description={project.description}
-                livePreview={project.livePreview}
-                sourceCode={project.sourceCode}
-              />
+              <ProjectCard key={project.id} projectObj={project} />
             ))}
         </div>
       </div>
