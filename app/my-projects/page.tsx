@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import { Projects } from "@/constants/projectsData";
+import { Projects } from "@/data/projectsData";
 import React from "react";
 
 const ProjectsPage = () => {

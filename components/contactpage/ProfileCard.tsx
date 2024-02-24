@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SkillsList from "./SkillsList";
-import { SkillData } from "@/constants/skillData";
+import { SkillData } from "@/data/skillData";
 
 export default function ProfileCard() {
   return (
