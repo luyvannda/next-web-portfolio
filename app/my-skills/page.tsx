@@ -5,7 +5,6 @@ import "swiper/css";
 import { SkillData } from "@/constants/skillData";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
-import Certificate from "@/components/Certificate";
 
 const Page = () => {
   return (
@@ -79,8 +78,6 @@ const Page = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          <Certificate />
         </div>
       </div>
     </main>
