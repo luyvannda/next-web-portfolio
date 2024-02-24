@@ -1,5 +1,5 @@
-import ContactForm from "@/components/contact/ContactForm";
-import ProfileCard from "@/components/contact/ProfileCard";
+import ContactForm from "@/components/contactpage/ContactForm";
+import ProfileCard from "@/components/contactpage/ProfileCard";
 import React from "react";
 
 const ContactMePage = () => {
