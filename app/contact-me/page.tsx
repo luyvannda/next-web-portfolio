@@ -13,9 +13,8 @@ const ContactMePage = () => {
       >
         <ProfileCard />
 
-        {CertificateData.map((certificate) => (
-          <Certificate key={certificate.id} certificateObj={certificate} />
-        ))}
+        <Certificate certificateData={CertificateData} />
+
         <section className="pb-16 pt-8">
           {" "}
           <div

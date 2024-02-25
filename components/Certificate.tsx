@@ -9,19 +9,26 @@ import "swiper/css/navigation";
 
 import Image from "next/image";
 
-import { FC } from "react";
-
 interface CertificateProps {
-  certificateObj: {
+  certificateData: {
+    map(
+      arg0: (certificate: {
+        id: number;
+        image: string;
+        title: string;
+        width: number;
+        height: number;
+      }) => import("react").JSX.Element,
+    ): import("react").ReactNode;
     id: number;
     title: string;
     image: string;
+    width: number;
+    height: number;
   };
 }
 
-const Certificate = ({
-  certificateObj: { id, title, image },
-}: CertificateProps) => {
+const Certificate = ({ certificateData }: CertificateProps) => {
   return (
     <div className="flex flex-col items-center gap-4">
       <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
@@ -43,39 +50,29 @@ const Certificate = ({
         modules={[Pagination, Navigation]}
         className="h-[80%] w-[80%] rounded-lg"
       >
-        <SwiperSlide>
-          <div className="flex h-full w-full items-center justify-center">
-            <Image src={`certificateImage/${image}`} alt={title} />
-          </div>
-        </SwiperSlide>
+        {certificateData.map(
+          (certificate: {
+            id: number;
+            image: string;
+            title: string;
+            width: number;
+            height: number;
+          }) => (
+            <SwiperSlide key={certificate.id}>
+              <div className="flex h-full w-full items-center justify-center">
+                <Image
+                  src={`/certificateImage/${certificate.image}`}
+                  alt={certificate.title}
+                  width={certificate.width}
+                  height={certificate.height}
+                />
+              </div>
+            </SwiperSlide>
+          ),
+        )}
       </Swiper>
     </div>
   );
 };
 
 export default Certificate;
-
-/* This is swiper css for Certificate component for contact-me page */
-
-// .swiper {
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .swiper-slide {
-//   text-align: center;
-//   font-size: 18px;
-//   background: #fff;
-
-//   /* Center slide text vertically */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// /* .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// } */
