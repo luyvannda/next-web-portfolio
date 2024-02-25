@@ -9,7 +9,19 @@ import "swiper/css/navigation";
 
 import Image from "next/image";
 
-export default function Certificate() {
+import { FC } from "react";
+
+interface CertificateProps {
+  certificateObj: {
+    id: number;
+    title: string;
+    image: string;
+  };
+}
+
+const Certificate = ({
+  certificateObj: { id, title, image },
+}: CertificateProps) => {
   return (
     <div className="flex flex-col items-center gap-4">
       <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
@@ -29,21 +41,19 @@ export default function Certificate() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="CertificateSwiper"
+        className="h-[80%] w-[80%] rounded-lg"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <div className="flex h-full w-full items-center justify-center">
+            <Image src={`certificateImage/${image}`} alt={title} />
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
-}
+};
+
+export default Certificate;
 
 /* This is swiper css for Certificate component for contact-me page */
 

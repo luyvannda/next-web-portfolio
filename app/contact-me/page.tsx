@@ -2,6 +2,7 @@ import Certificate from "@/components/Certificate";
 import ContactForm from "@/components/contactpage/ContactForm";
 import ProfileCard from "@/components/contactpage/ProfileCard";
 import React from "react";
+import { CertificateData } from "@/data/certificateData";
 
 const ContactMePage = () => {
   return (
@@ -12,8 +13,9 @@ const ContactMePage = () => {
       >
         <ProfileCard />
 
-        <Certificate />
-
+        {CertificateData.map((certificate) => (
+          <Certificate key={certificate.id} certificateObj={certificate} />
+        ))}
         <section className="pb-16 pt-8">
           {" "}
           <div
