@@ -1,5 +1,5 @@
 "use client";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -22,11 +22,18 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
 
       <div className="container">
         <Swiper
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: true,
+          }}
           pagination={{
             type: "fraction",
           }}
           navigation
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
+          speed={2500}
           onSwiper={(swiper) => console.log(swiper)}
           className="h-[80%] w-[80%] rounded-lg"
         >
