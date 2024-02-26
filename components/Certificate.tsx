@@ -20,14 +20,6 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
         My Certificates
       </h1>
 
-      {/* <p className="text-lg text-gray-400 xs:text-xl md:text-2xl">
-        Whenever my skills get accredited, <br className="md:hidden" />{" "}
-        <span className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent">
-          {" "}
-          I will list it here.
-        </span>
-      </p> */}
-
       <div className="container">
         <Swiper
           pagination={{
@@ -46,7 +38,8 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
                   alt={certificate.title}
                   width={certificate.width}
                   height={certificate.height}
-                  className=""
+                  className="w-[300px] 
+                  vs:w-auto"
                 />
               </div>
             </SwiperSlide>

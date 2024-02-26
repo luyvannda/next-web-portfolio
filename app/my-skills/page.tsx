@@ -9,13 +9,11 @@ const Page = () => {
   return (
     <main className="h-full w-screen overflow-x-hidden overflow-y-scroll">
       <div
-        style={{ backgroundImage: "url(/bg-2.jpg)" }}
-        className="flex h-full w-screen flex-col items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url(/bg-3.jpg)" }}
+        className="flex min-h-full w-screen flex-col items-center justify-center space-y-8 bg-cover bg-center"
       >
         <SkillHeading />
-
         <SkillSlide />
-
         <div>
           <Certificate certificateObj={CertificateData} />
         </div>

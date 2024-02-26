@@ -2,7 +2,6 @@ import Certificate from "@/components/Certificate";
 import ContactForm from "@/components/contactpage/ContactForm";
 import ProfileCard from "@/components/contactpage/ProfileCard";
 import React from "react";
-import { CertificateData } from "@/data/certificateData";
 
 const ContactMePage = () => {
   return (
@@ -12,8 +11,6 @@ const ContactMePage = () => {
         className="flex min-h-full w-screen flex-col items-center justify-center bg-cover bg-center"
       >
         <ProfileCard />
-
-        <Certificate certificateObj={CertificateData} />
 
         <section className="pb-16 pt-8">
           {" "}

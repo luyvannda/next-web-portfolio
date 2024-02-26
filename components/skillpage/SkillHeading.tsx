@@ -1,7 +1,7 @@
 export default function SkillHeading() {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
+    <div className="flex flex-col items-center md:space-y-2">
+      <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-5xl">
         Skills{" "}
         <span className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent">
           {" "}
