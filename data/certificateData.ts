@@ -1,4 +1,12 @@
-export const CertificateData = [
+export interface CertificateType {
+  id: number;
+  image: string;
+  title: string;
+  width: number;
+  height: number;
+}
+
+export const CertificateData: CertificateType[] = [
   {
     id: 1,
     title: "Responsive Web Design Certificate",

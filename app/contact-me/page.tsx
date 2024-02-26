@@ -13,7 +13,7 @@ const ContactMePage = () => {
       >
         <ProfileCard />
 
-        <Certificate certificateData={CertificateData} />
+        <Certificate certificateObj={CertificateData} />
 
         <section className="pb-16 pt-8">
           {" "}

@@ -2,35 +2,20 @@
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import Image from "next/image";
+import { CertificateType } from "../data/certificateData";
 
 interface CertificateProps {
-  certificateData: {
-    map(
-      arg0: (certificate: {
-        id: number;
-        image: string;
-        title: string;
-        width: number;
-        height: number;
-      }) => import("react").JSX.Element,
-    ): import("react").ReactNode;
-    id: number;
-    title: string;
-    image: string;
-    width: number;
-    height: number;
-  };
+  certificateObj: CertificateType[];
 }
 
-const Certificate = ({ certificateData }: CertificateProps) => {
+const Certificate = ({ certificateObj }: CertificateProps) => {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <section className="flex flex-col items-center gap-4">
       <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
         Certificates
       </h1>
@@ -42,22 +27,17 @@ const Certificate = ({ certificateData }: CertificateProps) => {
         </span>
       </p>
 
-      <Swiper
-        pagination={{
-          type: "fraction",
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="h-[80%] w-[80%] rounded-lg"
-      >
-        {certificateData.map(
-          (certificate: {
-            id: number;
-            image: string;
-            title: string;
-            width: number;
-            height: number;
-          }) => (
+      <div className="container">
+        <Swiper
+          pagination={{
+            type: "fraction",
+          }}
+          navigation
+          modules={[Pagination, Navigation]}
+          onSwiper={(swiper) => console.log(swiper)}
+          className="h-[80%] w-[80%] rounded-lg"
+        >
+          {certificateObj.map((certificate) => (
             <SwiperSlide key={certificate.id}>
               <div className="flex h-full w-full items-center justify-center">
                 <Image
@@ -65,13 +45,14 @@ const Certificate = ({ certificateData }: CertificateProps) => {
                   alt={certificate.title}
                   width={certificate.width}
                   height={certificate.height}
+                  className="block object-cover"
                 />
               </div>
             </SwiperSlide>
-          ),
-        )}
-      </Swiper>
-    </div>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 };
 
