@@ -1,3 +1,12 @@
+export interface SkillDataType {
+  id: number;
+  name: string;
+  Image: string;
+  emoji: string;
+  width: number;
+  height: number;
+}
+
 export const SkillData = [
   {
     id: 1,

@@ -17,15 +17,16 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
   return (
     <section className="flex flex-col items-center gap-4">
       <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
-        Certificates
+        My Certificates
       </h1>
-      <p className="text-lg text-gray-400 xs:text-xl md:text-2xl">
+
+      {/* <p className="text-lg text-gray-400 xs:text-xl md:text-2xl">
         Whenever my skills get accredited, <br className="md:hidden" />{" "}
         <span className="bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent">
           {" "}
           I will list it here.
         </span>
-      </p>
+      </p> */}
 
       <div className="container">
         <Swiper
@@ -39,13 +40,13 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
         >
           {certificateObj.map((certificate) => (
             <SwiperSlide key={certificate.id}>
-              <div className="flex h-full w-full items-center justify-center">
+              <div className="flex items-center justify-center">
                 <Image
                   src={`/certificateImage/${certificate.image}`}
                   alt={certificate.title}
                   width={certificate.width}
                   height={certificate.height}
-                  className="block object-cover"
+                  className=""
                 />
               </div>
             </SwiperSlide>

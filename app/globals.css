@@ -47,3 +47,10 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+/* This some custom css for swiper slide for Certificate component */
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+  @apply text-green-500;
+}
