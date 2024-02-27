@@ -15,12 +15,12 @@ export default function SkillSlide() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={5000}
+        speed={4000}
         modules={[Autoplay]}
         className="max-w-[80%]"
       >
-        {SkillData.map((skill, index) => (
-          <SwiperSlide key={index}>
+        {SkillData.map((skill) => (
+          <SwiperSlide key={skill.id}>
             <Image
               src={skill.Image}
               alt={skill.name}
@@ -39,12 +39,12 @@ export default function SkillSlide() {
           disableOnInteraction: false,
           reverseDirection: true,
         }}
-        speed={5000}
+        speed={4000}
         modules={[Autoplay]}
         className="max-w-[80%]"
       >
-        {SkillData.map((skill, index) => (
-          <SwiperSlide key={index}>
+        {SkillData.map((skill) => (
+          <SwiperSlide key={skill.id}>
             <Image
               src={skill.Image}
               alt={skill.name}
