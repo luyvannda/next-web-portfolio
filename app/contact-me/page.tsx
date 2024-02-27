@@ -1,4 +1,3 @@
-import Certificate from "@/components/Certificate";
 import ContactForm from "@/components/contactpage/ContactForm";
 import ProfileCard from "@/components/contactpage/ProfileCard";
 import React from "react";
@@ -12,11 +11,11 @@ const ContactMePage = () => {
       >
         <ProfileCard />
 
-        <section className="pb-16 pt-8">
+        <section className="w-[90%] pb-16 pt-8">
           {" "}
           <div
             style={{ backgroundImage: "url(atombg-comp.webp" }}
-            className="relative h-full w-full rounded-xl border border-white bg-cover bg-center lg:h-[60%]"
+            className="h-full w-full rounded-xl border border-white bg-cover bg-center p-4 vs:p-6 xs:pr-28 lg:h-[60%]"
           >
             <div className="">
               <ContactForm />
