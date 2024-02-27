@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function SkillSlide() {
   return (
-    <div className="flex max-w-[100%] flex-col items-center gap-4 text-center xs:gap-8 md:max-w-[90%] md:gap-8">
+    <div className="flex max-w-[100%] flex-col items-center gap-4 text-center xs:gap-8 md:max-w-[90%] md:gap-8 lg:max-w-[80%] xl:max-w-[85%]">
       <Swiper
         slidesPerView={5}
         loop={true}

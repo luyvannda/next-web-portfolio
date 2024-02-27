@@ -106,8 +106,8 @@ export const SkillData = [
   {
     id: 11,
     name: "Swiper",
-    Image: "/swiper.png",
-    color: "#4f5b93",
+    Image: "/swiper.svg",
+    color: "#0080ff",
     emoji: "👶",
     width: 80,
     height: 80,
@@ -117,7 +117,7 @@ export const SkillData = [
     id: 12,
     name: "Framer Motion",
     Image: "/framer.png",
-    color: "#4f5b93",
+    color: "#ee02bc",
     emoji: "👶",
     width: 80,
     height: 80,
@@ -133,7 +133,7 @@ export const SkillData = [
   },
   {
     id: 14,
-    name: "Mysql",
+    name: "MySQL",
     Image: "/mysql.png",
     color: "#f29221",
     emoji: "👶",

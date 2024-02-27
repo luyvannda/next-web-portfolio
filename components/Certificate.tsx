@@ -15,7 +15,7 @@ interface CertificateProps {
 
 const Certificate = ({ certificateObj }: CertificateProps) => {
   return (
-    <section className="flex flex-col items-center gap-4">
+    <section className="flex flex-col items-center gap-4 md:gap-6">
       <h1 className="text-3xl font-semibold text-white xs:text-4xl md:text-[50px]">
         My Certificates
       </h1>
@@ -25,7 +25,7 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 1500,
+            delay: 4000,
             disableOnInteraction: true,
           }}
           pagination={{
@@ -46,7 +46,7 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
                   width={certificate.width}
                   height={certificate.height}
                   className="w-[300px] 
-                  vs:w-auto"
+                  vs:w-auto lg:w-[700px] xl:w-[800px]"
                 />
               </div>
             </SwiperSlide>
