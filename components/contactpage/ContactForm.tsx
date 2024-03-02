@@ -1,6 +1,14 @@
 import React from "react";
+import { FC } from "react";
+import { useForm } from "react-hook-form";
 
-const ContactForm = () => {
+const ContactForm: FC = () => {
+  // const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data: any) => {
+    console.log(data);
+  };
+
   return (
     <form>
       <h2 className="mb-2 text-2xl font-bold text-white">Contact Me</h2>
