@@ -28,7 +28,15 @@ body {
   /* this a button for the project card */
 
   .project-btn {
-    @apply rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-400 active:bg-blue-800 xs:text-base md:transform md:text-lg md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2 xl:px-6 xl:py-3 xl:text-xl;
+    @apply flex items-center justify-center gap-2 rounded-xl bg-blue-500 px-3 py-2 text-sm font-semibold active:bg-blue-800 xs:text-base md:transform md:text-lg md:transition md:duration-500 md:ease-in-out md:hover:translate-y-2 xl:text-xl;
+  }
+
+  .project-view {
+    @apply text-white hover:bg-green-300 hover:text-slate-500;
+  }
+
+  .project-code {
+    @apply bg-slate-300 text-blue-500 hover:bg-amber-500 hover:text-white active:bg-blue-800;
   }
 }
 

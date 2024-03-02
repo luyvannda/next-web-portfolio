@@ -107,4 +107,15 @@ export const Projects = [
     livePreview: "https://luyvannda.github.io/tesla-landing-page/",
     sourceCode: "https://github.com/luyvannda/tesla-landing-page",
   },
+
+  {
+    id: 11,
+    imgCover: "pizza-menu.webp",
+    title: "PIZZA MENU",
+    skills: "REACT TAILWIND TYPESCRIPT",
+    description:
+      "Pizza menu is a dynamic app built with REACT, TAILWIND, and TYPESCRIPT",
+    livePreview: "https://luyvannda.github.io/pizza-menu/",
+    sourceCode: "https://github.com/luyvannda/pizza-menu",
+  },
 ];

@@ -1,5 +1,8 @@
 "use client";
 
+import githubIcon from "@/public/skillsImage/github.png";
+import eyeIcon from "@/public/projectsImage/eye.png";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -90,19 +93,26 @@ const ProjectCard = ({
 
       <div className="flex justify-center gap-3 pt-4 text-white md:justify-evenly md:gap-0">
         <Link
-          className="project-btn"
+          className="project-btn project-view"
           href={livePreview}
           target="_blank"
           rel="noreferrer"
         >
+          <Image src={eyeIcon} alt="An Eye icon" width={30} height={30}></Image>
           VIEW PROJECT
         </Link>
         <Link
-          className="project-btn"
+          className="project-btn project-code "
           href={sourceCode}
           target="_blank"
           rel="noreferrer"
         >
+          <Image
+            src={githubIcon}
+            alt="GitHub icon"
+            width={30}
+            height={30}
+          ></Image>
           VIEW CODE
         </Link>
       </div>
