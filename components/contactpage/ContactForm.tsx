@@ -1,14 +1,18 @@
 "use client";
 
+import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { FC } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { z } from "zod";
 
-type FormFields = {
-  name: string;
-  email: string;
-  comment: string;
-};
+const schema = z.object({
+  name: z.string().min(3, "Name must be at least 3 characters long"),
+  email: z.string().email("Please enter a valid email address"),
+  comment: z.string().min(8, "Comment must be at least 8 characters long"),
+});
+
+type FormFields = z.infer<typeof schema>;
 
 const ContactForm: FC = () => {
   const {
@@ -22,6 +26,7 @@ const ContactForm: FC = () => {
       email: "",
       comment: "",
     },
+    resolver: zodResolver(schema),
   });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
@@ -41,13 +46,7 @@ const ContactForm: FC = () => {
       <h2 className="mb-2 text-2xl font-bold text-white">Contact Me</h2>
       <div className="mb-3">
         <input
-          {...register("name", {
-            required: "Name is required",
-            minLength: {
-              value: 3,
-              message: "Name must be at least 3 characters long",
-            },
-          })}
+          {...register("name")}
           type="text"
           placeholder="Your name"
           name="name"
@@ -59,13 +58,7 @@ const ContactForm: FC = () => {
       </div>
       <div className="mb-3">
         <input
-          {...register("email", {
-            required: "Email is required",
-            pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              message: "Invalid email address",
-            },
-          })}
+          {...register("email")}
           type="text"
           placeholder="Email"
           name="email"
@@ -77,13 +70,7 @@ const ContactForm: FC = () => {
       </div>
       <div className="mb-3">
         <textarea
-          {...register("comment", {
-            required: "Comment is required",
-            minLength: {
-              value: 8,
-              message: "Please leave a comment with at least 8 characters",
-            },
-          })}
+          {...register("comment")}
           rows={4}
           placeholder="Please leave your comment here..."
           name="comment"
