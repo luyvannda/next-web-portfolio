@@ -27,8 +27,11 @@ const ContactForm: FC = () => {
       <div className="mb-3">
         <input
           {...register("name", {
-            required: true,
-            minLength: 3,
+            required: "name is required",
+            minLength: {
+              value: 3,
+              message: "Name must be at least 3 characters long",
+            },
           })}
           type="text"
           placeholder="Your name"
@@ -40,13 +43,13 @@ const ContactForm: FC = () => {
       <div className="mb-3">
         <input
           {...register("email", {
-            required: true,
+            required: "Email is required",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: "Invalid email address",
             },
           })}
-          type="email"
+          type="text"
           placeholder="Email"
           name="email"
           className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
@@ -56,9 +59,13 @@ const ContactForm: FC = () => {
       <div className="mb-3">
         <input
           {...register("comment", {
-            required: true,
-            minLength: 8,
+            required: "Comment is required",
+            minLength: {
+              value: 8,
+              message: "Please leave a comment with at least 8 characters",
+            },
           })}
+          type="text"
           placeholder="Your comment"
           name="comment"
           className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
