@@ -1,4 +1,4 @@
-# Welcome to my Next Personal Portfolio (In Progress: 70% complete)
+# Welcome to my Next Personal Portfolio (In Progress: 90% complete)
 
 ## Table of contents
 
@@ -26,9 +26,6 @@ Users should be able to:
 - View transition animation when switching between pages
 - View auto swiping motion when visit my-skills page
 - Flip every project cards with mouse click or touch in my-projects page
-
-Upcoming features yet to be implement:
-
 - Receive an error message when the `form` is submitted if:
   - Any field is empty
   - The email address is not formatted correctly
@@ -48,14 +45,15 @@ Upcoming features yet to be implement:
 - Tailwind
 - Framer Motion
 - Swiper
+- React Hook Form with Zod validation
 
 ### What I learned
 
-In this project, I have learned to use next.js for image optimization, server side rendering and routing. I also use typescript to make type validation and catching code errors before runtime. I also learned to use Tailwind to create responsive design for all screen devices. Additionally, I also learned some useful animation techniques with the help of Framer Motion and Swiper.
+In this project, I gained proficiency in using Next.js for image optimization, server-side rendering, and routing. Additionally, I learned to employ TypeScript for prop type validation, catching code errors before runtime. The project heavily relies on Tailwind CSS to create responsive designs across various screen devices. Furthermore, I explored valuable animation techniques with the assistance of Framer Motion and Swiper. Lastly, I acquired the skill to create a contact form using React Hook Form with Zod validation.
 
 ### Continued development
 
-As you can see, there is a few limitation to this web application, the front-end is robust and completed, yet the back-end still need to handle data from users when they interact with the contact form. I hope to implement this in later date when I am more proficient with database and next.js.
+While this web application boasts a robust and completed front-end, there are still a few limitations. The back-end needs to handle data from users when they interact with the contact form and send an auto-reply email to the user once the form is submitted. I plan to implement these features at a later date when I am more proficient with databases and Next.js.
 
 ## Author
 
@@ -64,6 +62,6 @@ As you can see, there is a few limitation to this web application, the front-end
 
 ## Acknowledgments
 
-Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the site responsive using tailwinds on my own, because his final production build does not pay much attention to responsive web design.
+Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the portfolio unique to my taste and responsive with tailwinds on my own, because his final production build does not pay much attention to responsive web design.
 
 https://www.youtube.com/watch?v=qwtWcGeIe40
