@@ -38,6 +38,12 @@ body {
   .project-code {
     @apply bg-slate-300 text-blue-500 hover:bg-amber-500 hover:text-white active:bg-blue-800;
   }
+
+  /* This is for form input in contact-me page */
+
+  .form {
+    @apply w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow md:text-base lg:text-lg;
+  }
 }
 
 /* this flip card effect is for the project card */

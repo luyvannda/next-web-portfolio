@@ -11,11 +11,11 @@ const ContactMePage = () => {
       >
         <ProfileCard />
 
-        <section className="w-[90%] pb-16 pt-8">
+        <section className="w-[90%] pb-16 pt-8 md:w-[80%]">
           {" "}
           <div
             style={{ backgroundImage: "url(atombg-comp.webp" }}
-            className="h-full w-full rounded-xl border border-white bg-cover bg-center p-4 vs:p-6 xs:pr-28 lg:h-[60%]"
+            className="h-full w-full rounded-xl border border-white bg-cover bg-center p-4 vs:p-6 xs:pr-[30%] sm:pr-[45%] md:p-10 md:pr-[45%] lg:pr-[50%] xl:pr-[52%] "
           >
             <div className="">
               <ContactForm />

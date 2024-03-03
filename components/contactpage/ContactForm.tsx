@@ -42,15 +42,17 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <h2 className="mb-2 text-2xl font-bold text-white">Contact Me</h2>
+    <form onSubmit={handleSubmit(onSubmit)} className="md:space-y-3">
+      <h2 className="mb-2 text-2xl font-bold text-white lg:text-3xl">
+        Contact Me
+      </h2>
       <div className="mb-3">
         <input
           {...register("name")}
           type="text"
           placeholder="Your name"
           name="name"
-          className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
+          className="form"
         />
         {errors.name && (
           <p className="mt-3 text-red-500">{errors.name.message}</p>
@@ -62,7 +64,7 @@ const ContactForm: FC = () => {
           type="text"
           placeholder="Email"
           name="email"
-          className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
+          className="form"
         />
         {errors.email && (
           <p className="mt-3 text-red-500">{errors.email.message}</p>
@@ -74,14 +76,14 @@ const ContactForm: FC = () => {
           rows={4}
           placeholder="Please leave your comment here..."
           name="comment"
-          className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
+          className="form"
         />
         {errors.comment && (
           <p className="mt-3 text-red-500">{errors.comment.message}</p>
         )}
       </div>
       <button
-        className="mb-5 rounded-lg bg-blue-500 px-5 py-3 text-sm font-bold uppercase text-white transition-all duration-150 ease-linear hover:bg-blue-400 lg:mb-10"
+        className="mb-5 rounded-lg bg-blue-500 px-5 py-3 text-sm font-bold uppercase text-white transition-all duration-150 ease-linear hover:bg-blue-400 active:bg-blue-800 md:text-base lg:mb-10"
         disabled={isSubmitting}
         type="submit"
       >
