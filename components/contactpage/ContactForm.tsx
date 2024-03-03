@@ -14,11 +14,26 @@ const ContactForm: FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm<FormFields>();
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<FormFields>({
+    defaultValues: {
+      name: "",
+      email: "",
+      comment: "",
+    },
+  });
 
-  const onSubmit: SubmitHandler<FormFields> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    try {
+      await new Promise<void>((resolve) => setTimeout(resolve, 1000));
+      // throw new Error();
+      console.log(data);
+    } catch (error) {
+      setError("root", {
+        message: "This email is already taken",
+      });
+    }
   };
 
   return (
@@ -27,7 +42,7 @@ const ContactForm: FC = () => {
       <div className="mb-3">
         <input
           {...register("name", {
-            required: "name is required",
+            required: "Name is required",
             minLength: {
               value: 3,
               message: "Name must be at least 3 characters long",
@@ -38,7 +53,9 @@ const ContactForm: FC = () => {
           name="name"
           className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
         />
-        {errors.name && <p className="text-red-500">{errors.name.message}</p>}
+        {errors.name && (
+          <p className="mt-3 text-red-500">{errors.name.message}</p>
+        )}
       </div>
       <div className="mb-3">
         <input
@@ -54,10 +71,12 @@ const ContactForm: FC = () => {
           name="email"
           className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
         />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+        {errors.email && (
+          <p className="mt-3 text-red-500">{errors.email.message}</p>
+        )}
       </div>
       <div className="mb-3">
-        <input
+        <textarea
           {...register("comment", {
             required: "Comment is required",
             minLength: {
@@ -65,18 +84,25 @@ const ContactForm: FC = () => {
               message: "Please leave a comment with at least 8 characters",
             },
           })}
-          type="text"
-          placeholder="Your comment"
+          rows={4}
+          placeholder="Please leave your comment here..."
           name="comment"
           className="w-full rounded border-0 bg-white px-3 py-2 text-sm text-black placeholder-gray-400 shadow"
         />
         {errors.comment && (
-          <p className="text-red-500">{errors.comment.message}</p>
+          <p className="mt-3 text-red-500">{errors.comment.message}</p>
         )}
       </div>
-      <button className="mb-5 rounded-lg bg-blue-500 px-5 py-3 text-sm font-bold uppercase text-white transition-all duration-150 ease-linear hover:bg-blue-400 lg:mb-10">
-        Send a message
+      <button
+        className="mb-5 rounded-lg bg-blue-500 px-5 py-3 text-sm font-bold uppercase text-white transition-all duration-150 ease-linear hover:bg-blue-400 lg:mb-10"
+        disabled={isSubmitting}
+        type="submit"
+      >
+        {isSubmitting ? "Loading..." : "Send a message"}
       </button>
+      {errors.root && (
+        <p className="mt-3 text-red-500">{errors.root.message}</p>
+      )}
     </form>
   );
 };
