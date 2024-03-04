@@ -15,11 +15,9 @@ const ContactMePage = () => {
           {" "}
           <div
             style={{ backgroundImage: "url(atombg-comp.webp" }}
-            className="h-full w-full rounded-xl border border-white bg-cover bg-center p-4 vs:p-6 xs:pr-[30%] sm:pr-[45%] md:p-10 md:pr-[40%] lg:pr-[50%] xl:pr-[52%] "
+            className="mb-4 h-full w-full rounded-xl border-2 border-white bg-cover bg-center p-4 vs:p-6 xs:mb-6 xs:pr-[30%] sm:pr-[45%] md:p-10 md:pr-[40%] lg:mb-10 lg:pr-[50%] xl:pr-[52%] "
           >
-            <div className="">
-              <ContactForm />
-            </div>
+            <ContactForm />
           </div>
         </section>
       </div>

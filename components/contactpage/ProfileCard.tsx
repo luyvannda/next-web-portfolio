@@ -4,7 +4,7 @@ import { SkillData } from "@/data/skillData";
 
 export default function ProfileCard() {
   return (
-    <div className="mt-32 flex w-[90%] flex-col items-center justify-center space-y-2 rounded-lg border border-gray-200 pb-4 text-white md:w-[80%]">
+    <div className="mt-32 flex w-[90%] flex-col items-center justify-center space-y-2 rounded-lg border-2 border-gray-200 pb-4 text-white md:w-[80%]">
       <Image
         src="/projectsImage/profile.png"
         alt="My profile image"
