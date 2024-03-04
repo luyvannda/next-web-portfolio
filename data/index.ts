@@ -7,14 +7,25 @@ export const Socials = [
     url: "https://discordapp.com/users/luyvannda",
   },
   {
+    name: "TwitterX",
+    src: "/twitter.webp",
+    url: "https://twitter.com/luyvannda",
+  },
+  {
     name: "Facebook",
     src: "/facebook.svg",
     url: "https://www.facebook.com/lvannda/",
   },
+
   {
     name: "Linkedin",
-    src: "/linkedin.svg",
+    src: "/linkedin.webp",
     url: "https://www.linkedin.com/in/luyvannda/",
+  },
+  {
+    name: "Telegram",
+    src: "/telegram.webp",
+    url: "https://t.me/luyvannda/",
   },
 ];
 
