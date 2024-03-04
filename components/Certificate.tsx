@@ -20,7 +20,7 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
         My Certificates
       </h1>
 
-      <div className="container">
+      <div className="container w-[320px] vs:w-auto">
         <Swiper
           slidesPerView={1}
           loop={true}
@@ -45,7 +45,7 @@ const Certificate = ({ certificateObj }: CertificateProps) => {
                   alt={certificate.title}
                   width={certificate.width}
                   height={certificate.height}
-                  className="w-[300px] 
+                  className="w-[280px] 
                   vs:w-auto lg:w-[700px] xl:w-[800px]"
                 />
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import githubIcon from "@/public/skillsImage/github.png";
+import githubIcon from "@/public/github.png";
 import eyeIcon from "@/public/projectsImage/eye.png";
 
 import React, { useState } from "react";
@@ -61,7 +61,7 @@ const ProjectCard = ({
               className="rounded-lg"
             ></Image>
 
-            <div className="absolute left-[50%] top-[50%] z-50 -translate-x-[50%] rounded-lg bg-slate-200 px-2 lg:opacity-0 lg:group-hover:opacity-80">
+            <div className="absolute left-[50%] top-[50%] z-50 -translate-x-[50%] rounded-lg bg-slate-200 px-2 py-1 md:px-3 md:py-2 lg:opacity-0 lg:group-hover:opacity-80">
               <p className="text-sm text-indigo-500 md:text-xl">
                 Learn more &gt;
               </p>

@@ -12,12 +12,12 @@ const Page = () => {
         style={{ backgroundImage: "url(/bg-3.jpg)" }}
         className="flex min-h-full w-screen flex-col items-center justify-center space-y-8 bg-cover bg-center"
       >
-        <div className="md:pt-20">
+        <div className="pt-24 md:pt-20">
           <SkillHeading />
         </div>
         <SkillSlide />
 
-        <div className="md:pb-16 lg:pb-24">
+        <div className="pb-20 md:pb-16 lg:pb-24">
           <Certificate certificateObj={CertificateData} />
         </div>
       </div>
