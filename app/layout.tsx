@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       {
         url: "https://onedrive.live.com/embed?resid=FF8AC3081FC56D69%2188629&authkey=%21ADLCZBEezBHJBk4&width=1200&height=627",
         width: 1200,
-        height: 630,
+        height: 627,
         alt: "Next Portfolio App",
       },
     ],
