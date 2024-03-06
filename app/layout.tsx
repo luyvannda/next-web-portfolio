@@ -14,10 +14,16 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://onedrive.live.com/embed?resid=FF8AC3081FC56D69%2188629&authkey=%21ADLCZBEezBHJBk4&width=1200&height=627",
+        url: "/og-image.png",
         width: 1200,
         height: 627,
-        alt: "Next Portfolio App",
+        alt: "Next Portfolio Image",
+      },
+      {
+        url: "/og-custom.png",
+        width: 800,
+        height: 600,
+        alt: "My custom Next Portfolio Image",
       },
     ],
   },
