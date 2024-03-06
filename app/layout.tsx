@@ -10,10 +10,11 @@ export const metadata: Metadata = {
   title: "Next Portfolio",
   description:
     "Welcome to my Next.js portfolio apps. This app showcase my front-end skills in Typescript, tailwind, framer motion, Swiper and more...",
+  metadataBase: new URL("https://luyvannda.vercel.app/"),
   openGraph: {
     images: [
       {
-        url: "https://onedrive.live.com/embed?resid=FF8AC3081FC56D69%2188623&authkey=%21AHFL2eCUsXcBlnw&width=1200&height=630",
+        url: "https://onedrive.live.com/embed?resid=FF8AC3081FC56D69%2188629&authkey=%21ADLCZBEezBHJBk4&width=1200&height=627",
         width: 1200,
         height: 630,
         alt: "Next Portfolio App",
