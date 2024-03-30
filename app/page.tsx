@@ -22,13 +22,13 @@ export default function Home() {
 
       {/* Footer Images */}
 
-      <div className="absolute bottom-0 z-10 h-auto w-full md:-z-10 lg:-bottom-28 lg:z-10 xl:-bottom-48">
+      <div className="absolute bottom-0 z-0  w-full md:-z-10 lg:-bottom-28 lg:z-10 xl:-bottom-48">
         <Image
           src="/trees.webp"
           alt="trees"
           width={2000}
           height={2000}
-          className="h-full w-full"
+          className="h-[500px] w-full"
         />
       </div>
 
