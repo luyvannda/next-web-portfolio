@@ -11,7 +11,7 @@ export default function Home() {
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
         <section className="lg:relative lg:flex lg:flex-col lg:justify-center">
-          <div className="z-10 flex flex-col items-center pt-32 md:pt-24 lg:relative lg:-translate-x-[2%] lg:translate-y-[45%] lg:items-start lg:space-y-8 lg:pt-0 xl:translate-x-[2%]">
+          <div className="​​​​ z-10 flex flex-col items-center pt-32 md:px-16 md:pt-24 lg:relative lg:-translate-x-[2%] lg:translate-y-[45%] lg:items-start lg:space-y-4 lg:px-0 lg:pt-0 xl:translate-x-[2%]">
             <Description />
             <Hero />
           </div>
@@ -22,14 +22,8 @@ export default function Home() {
 
       {/* Footer Images */}
 
-      <div className="absolute bottom-0 z-0  w-full md:-z-10 lg:-bottom-28 lg:z-10 xl:-bottom-48">
-        <Image
-          src="/trees.webp"
-          alt="trees"
-          width={2000}
-          height={2000}
-          className="h-[500px] w-full"
-        />
+      <div className="absolute bottom-0 -z-10 w-full  lg:-bottom-28 lg:z-0 xl:-bottom-48">
+        <Image src="/trees.webp" alt="trees" width={2000} height={800} />
       </div>
 
       <Image
