@@ -99,17 +99,6 @@ export const Projects = [
 
   {
     id: 10,
-    imgCover: "tesla-landing-page.webp",
-    title: "TESLA LANDING PAGE",
-    skills: "REACT TAILWIND TYPESCRIPT",
-    description:
-      "Tesla landing page is one of a final project of Udemy's tailwind course built with REACT, TAILWIND, and TYPESCRIPT",
-    livePreview: "https://luyvannda.github.io/tesla-landing-page/",
-    sourceCode: "https://github.com/luyvannda/tesla-landing-page",
-  },
-
-  {
-    id: 11,
     imgCover: "pizza-menu.webp",
     title: "PIZZA MENU",
     skills: "REACT TAILWIND TYPESCRIPT",
@@ -117,5 +106,16 @@ export const Projects = [
       "Pizza menu is a dynamic app built with REACT, TAILWIND, and TYPESCRIPT",
     livePreview: "https://luyvannda.github.io/pizza-menu/",
     sourceCode: "https://github.com/luyvannda/pizza-menu",
+  },
+
+  {
+    id: 11,
+    imgCover: "tesla-landing-page.webp",
+    title: "TESLA LANDING PAGE",
+    skills: "REACT TAILWIND TYPESCRIPT",
+    description:
+      "Tesla landing page is one of a final project of Udemy's tailwind course built with REACT, TAILWIND, and TYPESCRIPT",
+    livePreview: "https://luyvannda.github.io/tesla-landing-page/",
+    sourceCode: "https://github.com/luyvannda/tesla-landing-page",
   },
 ];
