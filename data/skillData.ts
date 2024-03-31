@@ -89,7 +89,7 @@ export const SkillData = [
     name: "TypeScript",
     Image: "/ts.png",
     color: "#3178c6",
-    level: "beginner",
+    level: "intermediate",
     width: 80,
     height: 80,
   },
@@ -105,34 +105,15 @@ export const SkillData = [
 
   {
     id: 11,
-    name: "Swiper",
-    Image: "/swiper.svg",
-    color: "#0080ff",
+    name: "NODEJS",
+    Image: "/node-js.png",
+    color: "#67bb4a",
     level: "beginner",
     width: 80,
     height: 80,
   },
-
   {
     id: 12,
-    name: "Framer Motion",
-    Image: "/framer.png",
-    color: "#ee02bc",
-    level: "beginner",
-    width: 80,
-    height: 80,
-  },
-  {
-    id: 13,
-    name: "PHP",
-    Image: "/php.png",
-    color: "#4f5b93",
-    level: "beginner",
-    width: 80,
-    height: 80,
-  },
-  {
-    id: 14,
     name: "MySQL",
     Image: "/mysql.png",
     color: "#f29221",
@@ -142,13 +123,33 @@ export const SkillData = [
   },
 
   {
-    id: 15,
+    id: 13,
     name: "API",
     Image: "/api.png",
     color: "green",
     level: "beginner",
     width: 65,
     height: 65,
+  },
+
+  {
+    id: 14,
+    name: "Swiper",
+    Image: "/swiper.svg",
+    color: "#0080ff",
+    level: "beginner",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    id: 15,
+    name: "Framer Motion",
+    Image: "/framer.png",
+    color: "#ee02bc",
+    level: "beginner",
+    width: 80,
+    height: 80,
   },
 
   {
