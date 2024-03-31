@@ -118,4 +118,15 @@ export const Projects = [
     livePreview: "https://luyvannda.github.io/tesla-landing-page/",
     sourceCode: "https://github.com/luyvannda/tesla-landing-page",
   },
+
+  {
+    id: 12,
+    imgCover: "next-portfolio.webp",
+    title: "NEXT PORTFOLIO ",
+    skills: "NEXTJS TAILWIND TYPESCRIPT AND MORE",
+    description:
+      "Next Portfolio is the latest front end project that I built with NEXTJS, TAILWIND, TYPESCRIPT, FRAMER MOTION, SWIPER , REACT HOOK FORM, ETC... ",
+    livePreview: "https://luyvannda.vercel.app/",
+    sourceCode: "https://github.com/luyvannda/next-web-portfolio",
+  },
 ];

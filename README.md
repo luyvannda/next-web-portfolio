@@ -1,4 +1,4 @@
-# Welcome to my Next Personal Portfolio (In Progress: 90% complete)
+# Welcome to my Next Personal Portfolio
 
 ## Table of contents
 
@@ -15,7 +15,7 @@
 
 ## Overview
 
-This is a web portfolio designed with tailwind.css, react, next.js and typescript.
+This is a web portfolio designed with next.js, tailwind.css, and typescript.
 
 ### Features
 
@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Sources Code URL: (https://github.com/luyvannda/next-web-portfolio)
-- Live Site URL: [Coming Soon!!](https://your-live-site-url.com)
+- Live Site URL: (https://luyvannda.vercel.app/)
 
 ## My process
 
@@ -62,6 +62,6 @@ While this web application boasts a robust and completed front-end, there are st
 
 ## Acknowledgments
 
-Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the portfolio unique to my taste and responsive with tailwinds on my own, because his final production build does not pay much attention to responsive web design.
+Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the portfolio unique to my taste and responsive with tailwinds on my own.
 
 https://www.youtube.com/watch?v=qwtWcGeIe40
