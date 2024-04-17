@@ -60,6 +60,7 @@ While this web application boasts a robust and completed front-end, there are st
 - Facebook - Luy Vannda or Joe Joe (https://www.facebook.com/lvannda/)
 - Twitter - [@luyvannda] (https://www.twitter.com/luyvannda)
 - GitHub -  (https://github.com/luyvannda)
+
 ## Acknowledgments
 
 Special thanks to WebChain Dev for video tutorial on how to build Next.js 14 Portfolio with tailwind css and typescript. My web portfolio is inspired from his but not exactly the same. I spent considerably long hours to make the portfolio unique to my taste and responsive with tailwinds on my own.
