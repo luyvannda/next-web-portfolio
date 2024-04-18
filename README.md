@@ -57,8 +57,9 @@ While this web application boasts a robust and completed front-end, there are st
 
 ## Author
 
-- Website - Luy Vannda or Joe Joe (https://www.your-site.com)
-- Twitter - [@luyvannda](https://www.twitter.com/luyvannda)
+- Facebook - Luy Vannda or Joe Joe (https://www.facebook.com/lvannda/)
+- Twitter - [@luyvannda] (https://www.twitter.com/luyvannda)
+- GitHub -  (https://github.com/luyvannda)
 
 ## Acknowledgments
 
