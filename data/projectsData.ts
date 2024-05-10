@@ -140,4 +140,15 @@ export const Projects = [
     livePreview: "https://luyvannda.github.io/odin-admin-dashboard/",
     sourceCode: "https://github.com/luyvannda/odin-admin-dashboard",
   },
+
+  {
+    id: 14,
+    imgCover: "travel_list.webp",
+    title: "FAR AWAY TRAVEL LIST ",
+    skills: "REACT TAILWIND TYPESCRIPT",
+    description:
+      "Do you love to travel? You can prepare for your next far away trip with the help of this travel packing list app.",
+    livePreview: "https://luyvannda.github.io/travel-list/",
+    sourceCode: "https://github.com/luyvannda/travel-list",
+  },
 ];
